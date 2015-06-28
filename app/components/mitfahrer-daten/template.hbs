@@ -1,0 +1,51 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">{{typeName}}, {{model.anzahlNaechte}} Nächte</h3>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-sm-4">
+                <h2>Mitfahrer(in) ist:</h2>
+            </div>
+            <div class="col-sm-4">
+                <h2>{{drop-down selectionList=mitfahrerTypen selected=model.type select="selectTyp"}}</h2>
+            </div>
+            <div class="col-sm-2">
+                <h2>{{model.kosten}}€</h2>
+            </div>
+            {{#if model.deletable}}
+            <div class="col-sm-2">
+                <h2><button type="button" class="btn btn-default" aria-label="Löschen" {{action "delete"}}>
+                  <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Löschen
+                </button></h2>
+            </div>
+            {{/if}}
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <h2>Nächte:</h2>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="checkbox">
+                    <label>{{input type="checkbox" checked=model.nacht1}}Mittwoch - Donnerstag</label>
+                </div>
+                <div class="checkbox">
+                    <label>{{input type="checkbox" checked=model.nacht2}}Donnerstag - Freitag</label>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="checkbox">
+                    <label>{{input type="checkbox" checked=model.nacht3}}Freitag - Samstag</label>
+                </div>
+                <div class="checkbox">
+                    <label>{{input type="checkbox" checked=model.nacht4}}Samstag - Sonntag</label>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+

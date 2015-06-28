@@ -1,0 +1,17 @@
+{{#each m in model}}
+  {{mitfahrer-daten model=m}}
+{{/each}}
+
+<div class="row">
+    <div class="col-sm-4">
+<button type="button" class="btn btn-default" aria-label="Mitfahrer hinzu" {{action 'addMf'}}>
+    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Mitfahrer(in) hinzufügen
+</button>
+      </div>
+
+        <div class="col-sm-4">
+<h2>Summe:</h2></div>
+            <div class="col-sm-4"><h2>{{gesamtSumme}}€</h2>
+            {{#if kinderBonus}}(mit Kinder-Bonus){{/if}}
+            </div>
+</div>

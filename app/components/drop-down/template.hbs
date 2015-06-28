@@ -1,0 +1,12 @@
+<div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="true">
+        {{selectedText}}
+        <span class="caret"></span>
+    </button>
+    <div class="dropdown-menu list-group" role="menu" aria-labelledby="dropdownMenu1">
+        {{#each s in selectionList}}
+          <a class="list-group-item" {{action "select" s}}><h3>{{s.name}}</h3><p>{{s.explanation}}</p></a>
+        {{/each}}
+    </div>
+</div>
+
