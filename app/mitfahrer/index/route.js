@@ -7,18 +7,18 @@ export default Ember.Route.extend({
           arrangedContent: Ember.computed.sort('content', 'props'),
           props: ['id:asc']
         }).create({
-          content: this.store.all('mitfahrer')});
+          content: this.store.peekAll('mitfahrer')});
 
     if (mod.content.content.length === 0) {
       this.store.createRecord('mitfahrer', {
         'number': 1,
         'type': 1,
-        'nacht1': false,
+        'nacht1': true,
         'nacht2': true,
         'nacht3': true,
         'nacht4': true,
-        'nacht5': false,
-        'nacht6': false,
+        'nacht5': true,
+        'nacht6': true,
         'nacht7': false,
         'nacht8': false,
         'nacht9': false,

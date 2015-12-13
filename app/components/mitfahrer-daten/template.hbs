@@ -7,10 +7,10 @@
             <div class="col-sm-4">
                 <h2>Mitfahrer(in) ist:</h2>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-3">
                 <h2>{{drop-down selectionList=mitfahrerTypen selected=model.type select="selectTyp"}}</h2>
             </div>
-            <div class="col-sm-2">
+            <div class="col-sm-3">
                 <h2>{{model.kosten}}€</h2>
             </div>
             {{#if model.deletable}}
@@ -29,23 +29,27 @@
 
             <div class="col-sm-4">
                 <div class="checkbox">
-                    <label>{{input type="checkbox" checked=model.nacht1}}Mittwoch - Donnerstag</label>
+                    <label>{{input type="checkbox" checked=model.nacht1}}Mo 28.12. - Di 29.12.</label>
                 </div>
                 <div class="checkbox">
-                    <label>{{input type="checkbox" checked=model.nacht2}}Donnerstag - Freitag</label>
+                    <label>{{input type="checkbox" checked=model.nacht2}}Di 29.12. - Mi 30.12.</label>
+                </div>
+                <div class="checkbox">
+                    <label>{{input type="checkbox" checked=model.nacht3}}Mi 30.12. - Do 31.12.</label>
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="checkbox">
-                    <label>{{input type="checkbox" checked=model.nacht3}}Freitag - Samstag</label>
+                    <label>{{input type="checkbox" checked=model.nacht4}}Do 31.12. - Fr 1.1.</label>
                 </div>
                 <div class="checkbox">
-                    <label>{{input type="checkbox" checked=model.nacht4}}Samstag - Sonntag</label>
+                    <label>{{input type="checkbox" checked=model.nacht5}}Fr 1.1. - Sa 2.1.</label>
+                </div>
+                <div class="checkbox">
+                    <label>{{input type="checkbox" checked=model.nacht6}}Sa 2.1. - So 3.1.</label>
                 </div>
             </div>
         </div>
-
-
     </div>
 </div>
 
