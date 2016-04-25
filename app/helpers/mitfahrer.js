@@ -4,15 +4,15 @@ export default [
     name: 'Vollpreiszahler',
     explanation: 'Chormitglied, Partner(in), anderer Erwachsener, '+
     'der aus mehr oder weniger eigenen Stücken mitfährt und voll zahlt',
-    sockel: 25,
-    nacht: 25
+    sockel: 18,
+    nacht: 18
   },
   {
     id: 2,
     name: 'Student',
     explanation: 'Wie Standard, aber Sondertarif für Studenten sowie nach Absprache mit Alina',
-    sockel: 16,
-    nacht: 16
+    sockel: 13,
+    nacht: 13
   },
   {
     id: 3,
